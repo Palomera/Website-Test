@@ -5,5 +5,24 @@
 </head>
 <body>
     <a href="http://globe-views.com/dcim/dreams/smile/smile-01.jpg">Smile Luli :)</a>
+	<script>
+	
+	var timer = (function() {
+		var basePeriod = 1000;
+		var currentSpeed = 1;
+		var timerElement;
+		var timeoutRef;
+		var count = 0;
+		
+		return {
+			start : function(speed, id) {
+				if(speed >= 0) {
+					currentSpeed = speed;
+				}
+				if (id) {
+					timerElement = document.getElementById(id);
+				}
+				timer.run();
+	
 </body>
 </html>
